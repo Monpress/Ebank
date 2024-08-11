@@ -11,7 +11,7 @@
     body{
     background:url('bg.jpg');
     background-repeat:no-repeat;
-    background-size:100% 140%;
+    background-size:100% 190%;
     }
     .blob {
     animation-name: blobby;
@@ -51,27 +51,14 @@
     border-top:none;
     border-bottom:none;
     height:30px;
-    border-radius:6px;
-    background:white;
-    color:black;
-    outline:none;
-    
-    }
-    input:hover{ 
-    border-left:none;
-    border-right:none;
-    margin-bottom:7px;
-    border-top:2px solid green;
-    border-bottom:2px solid green;
-    height:40px;
-    border-radius:8px;
+    border-radius:5px;
     background:white;
     color:black;
     outline:none;
     
     }
     .container{
-    height:500px;
+    height:300px;
     width:300px;
     background-color:rgba(0, 151, 19, 0.1);
     border-radius:16px;
@@ -221,29 +208,27 @@ background-color: rgba(255, 255, 255, 0.2);
 </div>
 <center>
     <div class="container">
-    
+    <br><br><br>
         <br><br>
         <form action="/register" method="post">
              <i class="fa fa-user" style="width:50px; font-size:26px; color:white; "aria-hidden="true"></i>
-        <input type="text" id="username" name="username"style="width:100px; margin-left:-0px;" placeholder=" first name" required > 
+        <input type="email" id="username" name="username" placeholder=" Email" required >   
         
- <input type="text" id="username" name="username" style="width:80px;" placeholder=" last name" required > 
- 
+         
+        
+        
         <br>
           <br>
-         <i class="fa fa-envelope" style="width:50px; font-size:26px; color:white; " aria-hidden="true"></i>
-            <input type="email" id="email" placeholder="Email" name="email" required> <br>
-           <br>
+       
            <i class="fa fa-key" style="width:50px; font-size:26px; color:white; " aria-hidden="true"></i>
             <input type="password" id="password" placeholder="Password" name="password" required><br>
             <br>
-            <i class="fa fa-key" style="width:50px; font-size:26px; color:white; " aria-hidden="true"></i>
-            <input type="password" id="password" placeholder="Confirm Password" name="password" required><br>
+          
         
             <br><br><br><br>
              <button class="button-85" role="button">
-            <div class="display"> <center> <i class="fa fa-check" style="font-size:11px; color:white; "aria-hidden="true">Register</i> </center> </div></button><br><br> 
-         <small>   <p> Already have an account? <a href="login.html"> login </a> </p></small>
+            <div class="display"> <center> <i class="fa fa-check" style="font-size:11px; color:white; "aria-hidden="true">Login</i> </center> </div></button><br><br> 
+         <small>   <p>Don't  have an account? <a href="index.html"> signup </a> </p></small>
         </form>
     </div>
     <div class="sliderthumb">
