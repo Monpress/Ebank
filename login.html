@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+    body{
+    background:url('bg.jpg');
+    background-repeat:no-repeat;
+    background-size:100% 190%;
+    }
+    .blob {
+    animation-name: blobby;
+    animation-duration: 9s;
+    animation-iteration-count: ;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+    mix-blend-mode: luminosity;
+  
+    }
+    @keyframes blobby {
+    0% {
+    border-radius: 50%;
+    }
+    20% {
+    border-radius: 41% 59% 41% 59% / 53% 51% 49% 47%;
+    transform: rotate(4deg);
+    }
+    40% {
+    transform: rotate(8deg);
+    border-radius: 43% 57% 41% 59% / 53% 52% 48% 47%;
+    }
+    80% {
+    border-radius: 48% 52% 41% 59% / 48% 58% 42% 52%;
+    transform: rotate(-10deg);
+    }
+    100% {
+    transform: rotate(12deg);
+    border-radius: 54% 46% 60% 40% / 43% 55% 45% 57%;
+    }
+    }
+ 
+    input{ 
+    border-left:none;
+    border-right:none;
+    margin-bottom:7px;
+    border-top:none;
+    border-bottom:none;
+    height:30px;
+    border-radius:5px;
+    background:white;
+    color:black;
+    outline:none;
+    
+    }
+    .container{
+    height:300px;
+    width:300px;
+    background-color:rgba(0, 151, 19, 0.1);
+    border-radius:16px;
+    color:white;
+    border:1px solid gray;
+  backdrop-filter: blur(14px); 
+background-color: rgba(255, 255, 255, 0.2); 
+          
+    }
+    a:link {
+    color: orange;
+    background-color: transparent;
+    text-decoration: none;
+    }
+    a:active{
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+    }
+    h2{
+      color:white;
+    }
+    .slider-thumb::before {
+    position: absolute;
+    content: "";
+    left: 20%;
+    top: 0%;
+    width: 140px;
+    height: 120px;
+    background: green;
+    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+    will-change: border-radius, transform, opacity;
+    animation: sliderShape 5s linear infinite;
+    display: block;
+    z-index: -1;
+    -webkit-animation: sliderShape 5s linear infinite;
+    }
+    @keyframes sliderShape{
+    0%,100%{
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    34%{
+    border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+    transform:  translate3d(0,5px,0) rotateZ(0.01deg);
+    }
+    50%{
+    transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    67%{
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
+    transform: translate3d(0,-3px,0) rotateZ(0.01deg);
+    }
+    }
+    
+    a:visited {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+    }
+    
+    button{
+    width:90px;
+    height:30px;
+    border-radius:7px;
+    background:#1890E8;
+    outline:none;
+    }
+    .button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top:0px;
+  left:0px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 5px);
+  height: calc(100% + 5px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+.display{
+  display:flex;
+}
+    </style>
+</head>
+<div class="slider-thumb"><br>
+<div class="slider-thumb">
+
+<body><div class="blob">
+
+<h2>Brian <font style="color:#88A0B8"> Lotto</h2>
+</font></div>
+</div>
+<center>
+    <div class="container">
+    <br><br><br>
+        <br><br>
+        <form action="/register" method="post">
+             <i class="fa fa-user" style="width:50px; font-size:26px; color:white; "aria-hidden="true"></i>
+        <input type="text" id="username" name="username" placeholder=" Username" required >      <br>
+          <br>
+       
+           <i class="fa fa-key" style="width:50px; font-size:26px; color:white; " aria-hidden="true"></i>
+            <input type="password" id="password" placeholder="Password" name="password" required><br>
+            <br>
+          
+        
+            <br><br><br><br>
+             <button class="button-85" role="button">
+            <div class="display"> <center> <i class="fa fa-check" style="font-size:11px; color:white; "aria-hidden="true">Login</i> </center> </div></button><br><br> 
+         <small>   <p>Don't  have an account? <a href="index.html"> signup </a> </p></small>
+        </form>
+    </div>
+    <div class="sliderthumb">
+    </div>
+</body>
+</html>
